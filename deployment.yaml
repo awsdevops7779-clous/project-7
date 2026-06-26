@@ -18,6 +18,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: tiangolo/meinheld-gunicorn-flask:python3.9
+        image: awsdevopsdev/flask-app:latest
+        imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 5000
